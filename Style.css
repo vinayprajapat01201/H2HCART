@@ -107,7 +107,47 @@ body {
 }
 
 
-/* Blog */
+/* Service section styles */
+
+.services {
+    cursor: pointer;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.service {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    max-width: 300px;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service h3 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.service p {
+    font-size: 14px;
+}
+
+.service-icon {
+    font-size: 40px;
+    margin: 10px 0;
+    color: #E8505B;
+}
 
 .blog-grid {
     display: grid;
@@ -142,12 +182,23 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
+    /* Add border-radius */
     margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out;
+    /* Add transition for the images */
+}
+
+.blog img:hover {
+    transform: scale(1.05);
+    /* Add a hover effect to scale the image slightly */
 }
 
 .blog p {
     font-size: 16px;
 }
+
+
+/* Blog */
 
 .video-grid {
     display: grid;
@@ -289,30 +340,5 @@ footer {
     }
     footer {
         font-size: 24px;
-    }
-}
-
-
-/* Media Queries for even smaller screens (e.g., mobile phones) */
-
-@media (max-width: 480px) {
-    body {
-        width: 95%;
-        /* Adjust as needed */
-    }
-    .container .text h1 {
-        font-size: 32px;
-    }
-    .heading {
-        font-size: 24px;
-    }
-    .blog {
-        padding: 10px;
-    }
-    .video {
-        padding-bottom: 60%;
-    }
-    footer {
-        font-size: 20px;
     }
 }
